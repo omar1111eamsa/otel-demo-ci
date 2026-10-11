@@ -9,7 +9,7 @@ import com.google.protobuf.gradle.*
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "2.4.20"
+    kotlin("jvm") version "2.4.21"
     application
     id("java")
     id("idea")
@@ -21,7 +21,7 @@ group = "io.opentelemetry"
 version = "1.0"
 
 
-val grpcVersion = "1.84.0"
+val grpcVersion = "1.84.2"
 val protobufVersion = "4.36.2"
 
 
