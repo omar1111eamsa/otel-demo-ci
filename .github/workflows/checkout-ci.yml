@@ -11,6 +11,7 @@ jobs:
       - uses: actions/setup-go@v6
         with:
           go-version-file: src/checkout/go.mod
+          cache-dependency-path: src/checkout/go.sum
       - run: go vet ./...
         working-directory: src/checkout
       - run: go test ./...
