@@ -2,6 +2,14 @@ name: checkout-ci
 
 on:
   push:
+    branches: [main]
+    paths:
+      - "src/checkout/**"
+      - ".github/workflows/checkout-ci.yml"
+  pull_request:
+    paths:
+      - "src/checkout/**"
+      - ".github/workflows/checkout-ci.yml"
 
 jobs:
   test:
