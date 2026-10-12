@@ -29,7 +29,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
       - name: Build with Gradle
         working-directory: src/ad
-        run: ./gradlew build
+        run: ./gradlew installDist
 
   docker-build:
     needs: test
