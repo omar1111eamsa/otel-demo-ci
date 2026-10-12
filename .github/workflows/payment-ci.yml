@@ -9,7 +9,7 @@ on:
       - ".github/workflows/payment-ci.yml"
   pull_request:
     paths:
-      - "src/checkout/**"
+      - "src/payment/**"
       - ".github/workflows/payment-ci.yml"
 
 permissions:
