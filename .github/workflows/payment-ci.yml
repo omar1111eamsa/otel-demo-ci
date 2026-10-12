@@ -28,8 +28,6 @@ jobs:
           cache-dependency-path: src/payment/package-lock.json
       - run: npm ci
         working-directory: src/payment
-      - run: npm ci
-        working-directory: src/payment
 
   docker-build:
     needs: test
